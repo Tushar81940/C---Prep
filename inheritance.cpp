@@ -1,36 +1,19 @@
 #include<iostream>
 using namespace std;
-class Employee{
-    public :
-    int id;
-    float salary;
-    Employee(int inpId){
-        id = inpId;
-        salary =34.0;
-    }
-    Employee(){}
-};
-
-class Programmer : public Employee
-{
-    public : 
-    Programmer (int inpId)
-    {
-        id = inpId;
-    }
-    int languageData = 9;
-    void getData(){
-        cout<<id<<endl;
+class Person{
+public:
+    void speak(){
+        cout<<"Person can speak "<<endl;
     }
 };
-
+class Student:public Person{
+    public:
+    void study(){
+        cout<<"Person Studies";
+    }
+};
 int main(){
-    Employee harry(1),rohan(2);
-    cout<<harry.salary<<endl;
-    cout<<rohan.salary;
-    Programmer skillF(10);
-    cout<<skillF.languageData<<endl;
-    cout<<skillF.id<<endl;
-    skillF.getData();
-    return 0;
+    Student s1;
+    s1.speak();
+    s1.study();
 }
