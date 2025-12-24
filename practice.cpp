@@ -1,22 +1,63 @@
 #include<iostream>
 using namespace std;
-int main(){
-    int i,n;
-    bool is_prime = true;
-    cout<<"Enter the positive Integer : ";
-    cin>>n;
-    if(n==0 || n==1){
-        is_prime = false;
-    }
-    for(i=2;i<n/2;++i){
-        if(n%i==0){
-           is_prime = false; 
-        }
-       }
-        if(is_prime){
-            cout<<"Number is Prime";
-        }
-        else{
-            cout<<"Number is not Prime";
-        }
-}
+// class Person{
+//     public : 
+//     string name;
+//     int age;
+//     void speak(){
+//         cout<<"Person can speak";
+//     }
+// };
+// class Student:public Person{
+//  public:
+//  void study(){
+//     cout<<"Person Studies";                       //Inheritance
+//  }    
+// };
+
+// int main(){
+//     Student s1;
+//     s1.speak();
+// }
+
+
+// class Animal{
+// public:
+// virtual void sound() = 0;
+
+// };                                                //Abstraction and Polymorphism
+
+// class Dog : public Animal{
+//     public:
+//     void sound(){
+//         cout<<"Dog Barks";
+//     }
+// };
+
+// int main(){
+//     Animal* a;
+//     Dog d;
+//     a=&d;
+//     a->sound();
+// }
+
+
+
+// class Student{
+//     private:
+//     int marks;
+//     public:
+//     void setMarks(int m){
+//     marks = m;                                          //Encapsulation
+//     }
+//     int getMarks(){
+//         return marks;
+//     }
+// };
+
+
+// int main(){
+//     Student s1;
+//     s1.setMarks(40);
+//     cout<<s1.getMarks();
+// }

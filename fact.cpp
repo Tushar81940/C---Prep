@@ -9,24 +9,34 @@ using namespace std;
 //     cout<<fact;
 // }
 
-void looping(){
-    for(int i=100;i>=1;i--){
-        cout<<i<<endl;
-    }
-}
+// void looping(){
+//     for(int i=100;i>=1;i--){
+//         cout<<i<<endl;
+//     }
+// }
 
-void countDigits(int n){
-    int count = 0;
-    while(n>0){
-        n=n/10;
-        count++;
-    }
-    cout<<count;
+// void countDigits(int n){
+//     int count = 0;
+//     while(n>0){
+//         n=n/10;
+//         count++;
+//     }
+//     cout<<count;
 
-}
+// }
+
+// int main(){
+//     // looping();
+//     countDigits(56);
+//     return 0;
+// }
 
 int main(){
-    // looping();
-    countDigits(56);
-    return 0;
+    int n; int fact=1;
+    cout<<"Enter the number ";
+    cin>>n;
+    for(int i=1;i<=n;i++){
+        fact=fact*i;
+    }
+    cout<<"Your Factorial is: "<<fact;
 }
