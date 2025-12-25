@@ -1,21 +1,24 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int i,n;
-    bool is_prime = true;
-    cout << "Enter a positive Integer : ";
+    int n;
+    cout<<"Enter the number : ";
     cin>>n;
-    if (n==0 || n==1){
-        is_prime=false;
+    if(n<=1){
+        cout<<"Not a Prime Number";  
     }
-    for(i=2;i<=n/2; ++i){
+    bool isPrime = true;
+    for(int i=2;i<n;i++){
         if(n%i==0){
-            is_prime = false;
-            break;
+            isPrime = false;
         }
     }
-    if (is_prime)
-    cout << n << " is a prime number";
-    else
-    cout << n << " is not a prime number";
+
+    if(isPrime){
+        cout<<"Prime Number";
+    }
+    else{
+        cout<<"Not a Prime Number";
+    }
+
 }

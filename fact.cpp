@@ -31,12 +31,21 @@ using namespace std;
 //     return 0;
 // }
 
+// int main(){
+//     int n; int fact=1;
+//     cout<<"Enter the number ";
+//     cin>>n;
+//     for(int i=1;i<=n;i++){
+//         fact=fact*i;
+//     }
+//     cout<<"Your Factorial is: "<<fact;
+// }
+
 int main(){
-    int n; int fact=1;
-    cout<<"Enter the number ";
-    cin>>n;
+    int n=5;
+    int fact=1;
     for(int i=1;i<=n;i++){
-        fact=fact*i;
+        fact = fact * i;
     }
-    cout<<"Your Factorial is: "<<fact;
+    cout<<"Factorial is : "<<fact;
 }
