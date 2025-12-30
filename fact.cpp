@@ -41,11 +41,26 @@ using namespace std;
 //     cout<<"Your Factorial is: "<<fact;
 // }
 
-int main(){
-    int n=5;
-    int fact=1;
-    for(int i=1;i<=n;i++){
-        fact = fact * i;
+// int main(){
+//     int n=5;
+//     int fact=1;
+//     for(int i=1;i<=n;i++){
+//         fact = fact * i;
+//     }
+//     cout<<"Factorial is : "<<fact;
+// }
+
+int factorial(int n){
+    if(n==0){
+        return 1;
     }
-    cout<<"Factorial is : "<<fact;
+    return n*factorial(n-1);
+}
+
+int main(){
+    int n;
+    cout<<"Enter the numeber to get the factorial :";
+    cin>>n;
+    cout<<"Your factorial is : "<<factorial(n);
+    return 0;
 }
