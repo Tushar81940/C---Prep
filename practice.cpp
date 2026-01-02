@@ -131,18 +131,18 @@ using namespace std;
 //     }
 // }
 
-void insertion_sort(int arr[],int n){
-    for(int i=0;i<=n-1;i++){
-        int j=i;
-        while(j>0 && arr[j-1]>arr[j]){
-            int temp = arr[j-1];
-            arr[j-1]=arr[j];
-            arr[j] = temp;
-            j--;
+// void insertion_sort(int arr[],int n){
+//     for(int i=0;i<=n-1;i++){
+//         int j=i;
+//         while(j>0 && arr[j-1]>arr[j]){
+//             int temp = arr[j-1];
+//             arr[j-1]=arr[j];
+//             arr[j] = temp;
+//             j--;
 
-        }
-    }
-}
+//         }
+//     }
+// }
 
 // int main(){
 //     int n;
@@ -175,3 +175,27 @@ void insertion_sort(int arr[],int n){
 //     removeDuplicate(arr,n);
 //     return 0;
 // }
+
+
+
+int main(){
+    int n=8;
+
+    if(n<=1){
+        return 1;
+    }
+    bool isPrime = true;
+    for(int i=2;i<n;i++){
+        if(n%i==0){
+            isPrime= false;
+            break;
+        }
+    }
+
+    if(isPrime){
+        cout<<"Prime Number";
+    }else{
+        cout<<"Not a Prime Number";
+    }
+
+}

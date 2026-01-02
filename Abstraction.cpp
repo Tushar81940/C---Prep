@@ -1,14 +1,33 @@
 #include<iostream>
 using namespace std;
+// class Animal{
+//     public:
+//     virtual void sound()=0;
+// };
+// class Dog:public Animal{
+// public: 
+// void sound(){
+//     cout<<"Dog Barks";
+// }
+// };
+
+// int main(){
+//     Animal* a;
+//     Dog d;
+//     a = &d;
+//     a->sound();
+// }
+
+
 class Animal{
     public:
-    virtual void sound()=0;
+    virtual void sound() = 0;
 };
 class Dog:public Animal{
-public: 
-void sound(){
-    cout<<"Dog Barks";
-}
+    public:
+    void sound(){
+        cout<<"Dog Barks";
+    }
 };
 
 int main(){
