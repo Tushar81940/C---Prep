@@ -11,8 +11,8 @@ void removeDuplicate(int arr[],int n){
 }
 
 int main(){
-    int arr[] = {3,4,2,4,2,5,6,3};
-    int n = 8;
+    int arr[] = {3,4,2,4,2,5,6,3,3};
+    int n = 9;
     removeDuplicate(arr,n);
     return 0;
 }
