@@ -2,10 +2,10 @@
 using namespace std;
 class Math{
 public:
-int add(int a, int b){
+int add(int a, int b){      //same name 
     return a+b;
 }
-int add(int a, int b, int c){
+int add(int a, int b, int c){     //different parameters
     return a+b+c;
 }
 };
