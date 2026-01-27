@@ -179,23 +179,22 @@ using namespace std;
 
 
 int main(){
-    int n=8;
+    // int n=8;
 
-    if(n<=1){
-        return 1;
-    }
-    bool isPrime = true;
-    for(int i=2;i<n;i++){
-        if(n%i==0){
-            isPrime= false;
-            break;
-        }
-    }
+    // if(n<=1){
+    //     return 1;
+    // }
+    // bool isPrime = true;
+    // for(int i=2;i<n;i++){
+    //     if(n%i==0){
+    //         isPrime= false;
+    //         break;
+    //     }
+    // }
 
-    if(isPrime){
-        cout<<"Prime Number";
-    }else{
-        cout<<"Not a Prime Number";
-    }
-
+    // if(isPrime){
+    //     cout<<"Prime Number";
+    // }else{
+    //     cout<<"Not a Prime Number";
+    // }
 }
